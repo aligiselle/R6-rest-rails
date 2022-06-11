@@ -15,7 +15,7 @@ class Api::V1::FactsController < ApplicationController
     def show
       # your code goes here
       if set_fact
-        render json: @fact, status: 201
+        render json: @fact, status: 200
       else
         render json: { error: 
         "The fact entry could not be found. #{@fact.errors.full_messages.to_sentence}"},
