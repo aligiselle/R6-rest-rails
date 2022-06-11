@@ -24,6 +24,9 @@ gem 'bootsnap'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 #gem 'rack-cors'
+gem 'rspec-rails'
+gem 'rexml'
+gem 'rswag'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -43,6 +46,13 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #gem "devise", "~> 4.8"
 #gem "devise-jwt", "~> 0.9.0"
 
+group :test do
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'rails-controller-testing'
+end
+
 gem 'devise'
 gem 'devise-jwt'
 gem 'rack-cors'
+
